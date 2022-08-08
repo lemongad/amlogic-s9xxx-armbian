@@ -1,8 +1,0 @@
-name: armbian
-on: [push]
-jobs:
-  armbian:
-    runs-on: armbian-latest
-    steps:
-    - name: Setup Debug Session
-      uses: csexton/debugger-action@master
