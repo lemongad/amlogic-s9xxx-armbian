@@ -23,7 +23,7 @@ on:
         default: "all"
         type: choice
         options：
-          -all
+         - all
           
           
            
