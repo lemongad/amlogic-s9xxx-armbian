@@ -20,10 +20,10 @@ on:
       armbian_soc:
         description: "Select Amlogic SoC."
         required: false
-        default: "all"
+        default:"s905l3a"
         type: choice
         options：
-         - all
+         
           
           
            
