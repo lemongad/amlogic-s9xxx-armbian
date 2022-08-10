@@ -74,7 +74,7 @@ on:
       armbian_sign:
         description: "Set armbian custom name."
         required: false
-        default: ""
+        default: "lemon"
   #schedule:
   #- cron: "0 17 * * 0"
 
@@ -123,7 +123,7 @@ jobs:
           echo "::set-output name=status::success"
 
       - name: Rebuild Armbian for Amlogic s9xxx
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: lemongad/amlogic-s9xxx-armbian@main
         if: steps.compile.outputs.status == 'success' && !cancelled()
         with:
           build_target: armbian
