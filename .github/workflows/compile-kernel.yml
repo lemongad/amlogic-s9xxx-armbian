@@ -71,7 +71,7 @@ jobs:
           echo "COMPILE_STARTINGTIME=$(date +"%m.%d.%H%M")" >> $GITHUB_ENV
 
       - name: Compile the kernel for Amlogic s9xxx
-        uses: lemon/amlogic-s9xxx-armbian@main
+        uses: lemongad/amlogic-s9xxx-armbian@main
         with:
           build_target: kernel
           kernel_repo: ${{ github.event.inputs.kernel_repo }}
